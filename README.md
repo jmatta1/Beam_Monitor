@@ -3,10 +3,10 @@ This script uses the counts of peaks in HPGe spectra, the absolute branching of 
 
 ## Execution
 Running this script can be accomplished in several ways:
-- './calc_rate.py input_file_name.py'
-- './calc_rate.py input_file_name'
-- 'python calc_rate.py input_file_name.py'
-- 'python calc_rate.py input_file_name
+- `./calc_rate.py input_file_name.py`
+- `./calc_rate.py input_file_name`
+- `python calc_rate.py input_file_name.py`
+- `python calc_rate.py input_file_name`
 
 ## Input
 
