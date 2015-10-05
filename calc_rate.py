@@ -222,6 +222,26 @@ def test_list_types():
     if not isinstance(INPUT["HPGe Efficiency Function"], types.ListType):
         print 'The "HPGe Efficiency Function" entry must be a list'
         sys.exit()
+    for element in INPUT["Gamma Energies"]:
+        if not isinstance(element, types.FloatType):
+            print 'All elements of the "Gamma Energies" entry must be'
+            print 'floating point numbers'
+            sys.exit()
+    for element in INPUT["Gamma Branchings"]:
+        if not isinstance(element, types.FloatType):
+            print 'All elements of the "Gamma Branchings" entry must be'
+            print 'floating point numbers'
+            sys.exit()
+    for element in INPUT["Gamma Areas"]:
+        if not isinstance(element, types.FloatType):
+            print 'All elements of the "Gamma Areas" entry must be'
+            print 'floating point numbers'
+            sys.exit()
+    for element in INPUT["HPGe Efficiency Function"]:
+        if not isinstance(element, types.FloatType):
+            print 'All parts of the "HPGe Efficiency Function" entry must be'
+            print 'floating point numbers'
+            sys.exit()
 
 
 HEADER_STRING = """
