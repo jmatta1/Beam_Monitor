@@ -17,6 +17,7 @@ The script has very few constraints they are:
 - The **INPUT["Half Life"]**, **INPUT["Cycle Length"]**, **INPUT["Collection Time"]**, **INPUT["Voltage Rampdown Time"]**, and **INPUT["HPGe Integration Time"]** entries must all be floating point numbers.
 - The **INPUT["Title Name"]** entry must be a string with 63 characters or less.
 - The file must start with `INPUT = {}`.'
+- Comments in the input file must be in the standard python format.
 
 ## Input
 ### Listing
