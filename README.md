@@ -28,7 +28,7 @@ The script has very few constraints they are as follows:
 - **"Cycle Length"**, *Floating Point*, Time in seconds of a complete cycle: Collection time + 3*(move time) + measure time + laser time + etc.
 - **"Collection Time"**, *Floating Point*, Time in seconds of the collection phase in a cycle.
 - **"Voltage Rampdown Time"**, *Floating Point*, Time in seconds for the HV on the kicker to go from 5000V to 0V, should be ***0.002*** with the new HV switch.
-- **"HPGe Integration Time"**, *Floating Point* Time in seconds that the HPGe has been running.
+- **"HPGe Integration Time"**, *Floating Point*, Time in seconds that the HPGe has been running.
 - **"Gamma Energies"**, *List of n Floating Points*, List of n energies of fitted gamma rays (in MeV), n >= 1.
 - **"Gamma Branchings"**, *List of n Floating Points*, List of n absolute branchings of the fitted gamma rays, n >= 1.
 - **"Gamma Areas"**, *List of n Floating Points*, List of n peak areas of the fitted gamma rays, n >= 1.
@@ -54,7 +54,7 @@ INPUT["Title Name"] = "Some Random Nucleus"
 INPUT["Half Life"] = 172.2
 # stores the cycle length in seconds
 # this is: Collection time + 3*(move time) + measure time + laser time
-INPUT["Cycle Length"] = 286.61
+INPUT["Cycle Length"] = (100.0 + (3.0 * 0.780) + 175 + 0.20
 # stores the collection time in seconds
 INPUT["Collection Time"] = 100.0
 # stores the rampdown time of the high voltage kicker, lets the script account
