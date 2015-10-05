@@ -225,22 +225,26 @@ def test_list_types():
     for element in INPUT["Gamma Energies"]:
         if not isinstance(element, types.FloatType):
             print 'All elements of the "Gamma Energies" entry must be'
-            print 'floating point numbers'
+            print 'floating point numbers. Consider adding ".0" to the end if'
+            print 'it is an integer'
             sys.exit()
     for element in INPUT["Gamma Branchings"]:
         if not isinstance(element, types.FloatType):
             print 'All elements of the "Gamma Branchings" entry must be'
-            print 'floating point numbers'
+            print 'floating point numbers. Consider adding ".0" to the end if'
+            print 'it is an integer'
             sys.exit()
     for element in INPUT["Gamma Areas"]:
         if not isinstance(element, types.FloatType):
             print 'All elements of the "Gamma Areas" entry must be'
-            print 'floating point numbers'
+            print 'floating point numbers. Consider adding ".0" to the end if'
+            print 'it is an integer'
             sys.exit()
     for element in INPUT["HPGe Efficiency Function"]:
         if not isinstance(element, types.FloatType):
-            print 'All parts of the "HPGe Efficiency Function" entry must be'
-            print 'floating point numbers'
+            print 'All elements of the "HPGe Efficiency Function" entry must'
+            print 'be floating point numbers. Consider adding ".0" to the end'
+            print 'if it is an integer'
             sys.exit()
 
 
