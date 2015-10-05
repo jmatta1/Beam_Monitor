@@ -35,8 +35,8 @@ The script has very few constraints they are as follows:
 - **"HPGe Efficiency Function"**, *List of six Floating Points*, List of the six parameters of the HPGe Efficiency function.
 
 ### Information
-Entries in the input file appear as: INPUT["Entry Name"] = Stuff
-The gamma efficiency function is:
+- Entries in the input file appear as: INPUT["Entry Name"] = Stuff
+- The gamma efficiency function is:
 ```
 Eff(En) = (a0 + a1*x + a2*x^2 + a3*x^3 + a5*x^5 + a7*x^7)/(En)
 x = Log10(En)
