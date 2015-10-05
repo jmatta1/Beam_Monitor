@@ -8,7 +8,9 @@ Running this script can be accomplished in several ways:
 - 'python calc_rate.py input_file_name.py'
 - 'python calc_rate.py input_file_name
 
-## Constraints
+## Input
+
+### Constraints
 The script has very few constraints they are as follows:
 - The input file, whatever the name, must have the `.py` extension.
 - The input file must be in the same directory as the script.
@@ -19,7 +21,6 @@ The script has very few constraints they are as follows:
 - The file must start with `INPUT = {}`.
 - Comments in the input file must be in the standard python format.
 
-## Input
 ### Listing
 - **"Entry Name"**, *Type*, Information
 - **"Title Name"**, *String*, Max 63 character string which is displayed in the output.
