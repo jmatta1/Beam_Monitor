@@ -9,7 +9,7 @@ Running this script can be accomplished in several ways:
 - 'python calc_rate.py input_file_name
 
 ## Constraints
-The script has very few constraints they are:
+The script has very few constraints they are as follows:
 - The input file, whatever the name, must have the `.py` extension.
 - The input file must be in the same directory as the script.
 - The **INPUT["Gamma Energies"]**, **INPUT["Gamma Branching"]**, and **INPUT["Gamma Areas"]** entries must all be lists with the same number of entries in each list.
