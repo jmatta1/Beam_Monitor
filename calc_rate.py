@@ -12,16 +12,16 @@ if len(sys.argv) != 2:
     print "\tpython mda.py configuration_file\n"
     sys.exit()
 # strip off the .py if it exists
-CF_FILE_NAME = None
+IN_FILE_NAME = None
 if sys.argv[1][-3:] == ".py":
-    CF_FILE_NAME = sys.argv[1][0:-3]
+    IN_FILE_NAME = sys.argv[1][0:-3]
 else:
-    CF_FILE_NAME = sys.argv[1]
+    IN_FILE_NAME = sys.argv[1]
 # prevent bytecode generation for the config file
 ORIGINAL_SYS_DONT_WRITE_BYTECODE = sys.dont_write_bytecode
 sys.dont_write_bytecode = True
 # import the config file
-INPUT = __import__(CF_FILE_NAME).INPUT
+INPUT = __import__(IN_FILE_NAME).INPUT
 # restore the dont_write_bytecode variable to its original value
 sys.dont_write_bytecode = ORIGINAL_SYS_DONT_WRITE_BYTECODE
 
